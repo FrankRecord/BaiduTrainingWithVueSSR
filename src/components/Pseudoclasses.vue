@@ -18,7 +18,7 @@
             <li>第三层列表第三项</li>
           </ol>
         </li>
-        <li>第三层列表第四项</li>
+        <li>第二层列表第四项</li>
       </ol>
     </li>
     <li>第一层列表第二项</li>
@@ -72,13 +72,25 @@
 ul > li{
   border: #242424 1px solid;
 }
-ul > li > ol > li {
+ul > li > ol > li{
   background: darkcyan;
 }
+
+ul > li > ol > li > ol > li {
+  border: 2px dotted black;
+  background: white;
+}
+
 ul > li > ol > li > ol > li:last-of-type{
   font-style: italic;
   color: white;
   background: #000000;
+}
+ol > li:first-of-type{
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid black;
+  background: black;
 }
 
 tr:nth-child(odd){

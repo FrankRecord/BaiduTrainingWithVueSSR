@@ -11,6 +11,7 @@ import BuildingForms from "../components/BuildingForms.vue";
 import ResponsivePage from "../components/ResponsivePage.vue";
 import RegisterPage from "../components/RegisterPage.vue";
 import ImageProcess from "../components/ImageProcess.vue";
+import FloatLayout from "../components/FloatLayout.vue";
 
 
 const  routes = [
@@ -61,8 +62,12 @@ const  routes = [
         component: RegisterPage
     },{
         name: 'ImageProcess',
-        path: '/ImageProcess',
+        path: '/imageProcess',
         component: ImageProcess
+    },{
+        name: 'FloatLayout',
+        path: '/floatLayout',
+        component: FloatLayout
     }
 ]
 

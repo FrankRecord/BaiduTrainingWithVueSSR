@@ -20,6 +20,7 @@ import ResumePage from "./components/ResumePage.vue";
     <router-link to="ResponsivePage" class="p-1">ResponsivePage</router-link>
     <router-link to="RegisterPage" class="p-1">RegisterPage</router-link>
     <router-link to="ImageProcess" class="p-1">ImageProcess</router-link>
+    <router-link to="FloatLayout" class="p-1">FloatLayout</router-link>
   </div>
   <router-view></router-view>
 </template>

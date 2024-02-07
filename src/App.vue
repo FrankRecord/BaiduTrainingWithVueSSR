@@ -1,10 +1,6 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import BlogSection from "./components/BlogSection.vue";
-import LoginForm from "./components/LoginForm.vue";
-import ResumePage from "./components/ResumePage.vue";
 </script>
 
 <template>
@@ -21,6 +17,7 @@ import ResumePage from "./components/ResumePage.vue";
     <router-link to="RegisterPage" class="p-1">RegisterPage</router-link>
     <router-link to="ImageProcess" class="p-1">ImageProcess</router-link>
     <router-link to="FloatLayout" class="p-1">FloatLayout</router-link>
+    <router-link to="OfficePage" class="p-1">officePage</router-link>
   </div>
   <router-view></router-view>
 </template>

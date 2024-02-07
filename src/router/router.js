@@ -12,6 +12,7 @@ import ResponsivePage from "../components/ResponsivePage.vue";
 import RegisterPage from "../components/RegisterPage.vue";
 import ImageProcess from "../components/ImageProcess.vue";
 import FloatLayout from "../components/FloatLayout.vue";
+import OfficePage from "../components/OfficePage.vue";
 
 
 const  routes = [
@@ -68,6 +69,10 @@ const  routes = [
         name: 'FloatLayout',
         path: '/floatLayout',
         component: FloatLayout
+    },{
+        name: 'OfficePage',
+        path: '/officePage',
+        component: OfficePage
     }
 ]
 

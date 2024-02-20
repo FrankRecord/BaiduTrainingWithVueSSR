@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import BuildingForms from "./BuildingForms.vue";
 </script>
 
 <template>
@@ -250,6 +251,128 @@
       </svg>
       <h2 class="text-3xl">关于新世界，你不知道的还有什么?</h2>
     </div>
+    <div class="search-area">
+      <div class="search-title">
+        <h3>查找新世界的活动</h3>
+        <span class="one-word-bottom-line"></span>
+        <h5>每个城市有不同的活动信息，自主查找你想了解的城市</h5>
+      </div>
+      <div class="search-bar-area">
+        <div class="region-list">
+          <input class="region" id="region-select" list="region-option" placeholder="国家">
+          <datalist id="region-option">
+            <option>Australia</option>
+            <option>Asian</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Africa America</option>
+          </datalist>
+        </div>
+        <div class="province-list">
+          <input class="province" list="province-option" placeholder="省份">
+          <datalist id="province-option">
+            <option>Australia</option>
+            <option>Asian</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Africa America</option>
+          </datalist>
+        </div>
+        <div class="city-list">
+          <input class="city" list="city-option" placeholder="城市">
+          <datalist id="city-option">
+            <option>Australia</option>
+            <option>Asian</option>
+            <option>North America</option>
+            <option>South America</option>
+            <option>Africa America</option>
+          </datalist>
+        </div>
+        <button>搜索</button>
+      </div>
+    </div>
+    <div class="display-area">
+      <div class="box-container">
+        <div class="hidden-box">
+          <div>
+            <div class="big-activity-title">
+              <p>北</p>
+              <p>京</p>
+              <p>活</p>
+              <p>动</p>
+            </div>
+            <p>新社区大联盟</p>
+          </div>
+          <div>
+            <img src="../assets/istockphoto-1424167771-1024x1024.jpg" alt="display-img"/>
+          </div>
+          <div>
+            <p>北京活动</p>
+            <p>新社区大联盟</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="hidden-box">
+          <div>
+            <div class="big-activity-title">
+              <p>北</p>
+              <p>京</p>
+              <p>活</p>
+              <p>动</p>
+            </div>
+            <p>新社区大联盟</p>
+          </div>
+          <div>
+            <img src="../assets/istockphoto-667722877-1024x1024.jpg" alt="display-img"/>
+          </div>
+          <div>
+            <p>北京活动</p>
+            <p>新社区大联盟</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="hidden-box">
+          <div>
+            <div class="big-activity-title">
+              <p>北</p>
+              <p>京</p>
+              <p>活</p>
+              <p>动</p>
+            </div>
+            <p>新社区大联盟</p>
+          </div>
+          <div>
+            <img src="../assets/istockphoto-657062876-1024x1024.jpg" alt="display-img"/>
+          </div>
+          <div>
+            <p>北京活动</p>
+            <p>新社区大联盟</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="hidden-box">
+          <div>
+            <div class="big-activity-title">
+              <p>北</p>
+              <p>京</p>
+              <p>活</p>
+              <p>动</p>
+            </div>
+            <p>新社区大联盟</p>
+          </div>
+          <div>
+            <img src="../assets/istockphoto-20240204.jpg" alt="display-img"/>
+          </div>
+          <div>
+            <p>北京活动</p>
+            <p>新社区大联盟</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -381,35 +504,153 @@
   flex-flow: row wrap;
   justify-content: space-around;
   font-size: 12px;
+  margin: 40px 0;
 }
-.brief-intro-word{
+
+.brief-intro-word {
   width: 25%;
 }
-.brief-intro > div > p{
+
+.brief-intro > div > p {
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
-.brief-intro > div{
+
+.brief-intro > div {
   padding: 20px 0px;
 }
-.brief-intro > div:nth-child(1){
+
+.brief-intro > div:nth-child(1) {
   border-right: 1px solid black;
 }
-.brief-intro > div:nth-child(2){
+
+.brief-intro > div:nth-child(2) {
   border-right: 1px solid black;
 }
-.brief-intro > div:nth-child(3){
+
+.brief-intro > div:nth-child(3) {
   border-right: 1px solid black;
 }
-.question-area{
+
+.question-area {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   background: #F5F5F5;
   padding: 40px 10px;
-  color: #808080	;
+  color: #808080;
+}
+
+.search-area {
+  padding: 10vh 0 10vh 0;
+  background: url("../assets/wren-8496039_1920.jpg");
+}
+
+.search-title {
+  display: grid;
+  grid-template-rows: 1fr 0.3fr 1fr;
+  text-align: center;
+}
+
+.search-title > h3 {
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.search-title > span {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+  border-top: 5px solid #ffffff;
+}
+
+.search-title > h5 {
+  font-size: 15px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+
+.search-bar-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 40px 40px;
+  padding: 10px 40px;
+}
+
+.search-bar-area > div > input {
+  padding: 10px 10px;
+  border: 0.2px solid grey;
+  width: 250px;
+  height: 40px;
+  outline: none;
+}
+
+.search-bar-area > button {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  background: firebrick;
+  color: #ffffff;
+  outline: none;
+  border-radius: 0;
+}
+
+.display-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 15vh;
+  margin: 80px 0;
+  column-gap: px;
+}
+
+.big-activity-title{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  font-size: 20px;
+  padding: 0 40px;
+}
+
+.box-container{
+  height: 442px;
+  overflow: hidden;
+
+}
+.hidden-box {
+  position: relative;
+  top: -60px;
+}
+.hidden-box:hover{
+  top: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden-box > div:nth-child(2) {
+  padding: 10px;
+  border-left: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  border-right: 1px solid #F5F5F5;
+}
+
+.hidden-box div > img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.hidden-box > div {
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hidden-box > div > p:nth-child(2) {
+  color: #D3D3D3;
+  font-size: 14px;
 }
 
 </style>

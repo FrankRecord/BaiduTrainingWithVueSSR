@@ -1155,6 +1155,7 @@ import BuildingForms from "./BuildingForms.vue";
 .footer {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
+  justify-items: center;
   background: rgb(21, 26, 36);
   color: white;
   height: 30px;

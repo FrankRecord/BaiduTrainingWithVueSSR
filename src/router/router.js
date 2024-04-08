@@ -13,6 +13,8 @@ import RegisterPage from "../components/RegisterPage.vue";
 import ImageProcess from "../components/ImageProcess.vue";
 import FloatLayout from "../components/FloatLayout.vue";
 import OfficePage from "../components/OfficePage.vue";
+import ResponsiveImg from "../components/ResponsiveImg.vue";
+import GridTemplate from "../components/GridTemplate.vue";
 
 
 const  routes = [
@@ -73,6 +75,14 @@ const  routes = [
         name: 'OfficePage',
         path: '/officePage',
         component: OfficePage
+    }, {
+        name: 'ResponsiveImage',
+        path: '/responsiveImage',
+        component: ResponsiveImg
+    },{
+        name: 'GridTemplate',
+        path: '/gridTemplate',
+        component: GridTemplate
     }
 ]
 
